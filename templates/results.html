@@ -1,0 +1,4 @@
+@app.route('/submit', methods=['POST'])
+def submit():
+    name = request.form['name']
+    return render_template('result.html', name=name)
